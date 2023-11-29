@@ -12,6 +12,8 @@ root.title("연습")
 root.geometry("640x400+100+100")
 root.resizable(False, False)
 
+
+
 menubar = Menu(root)
 filemenu = Menu(menubar, tearoff=0)
 filemenu.add_command(label="New", command=donothing)
