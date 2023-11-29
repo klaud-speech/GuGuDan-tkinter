@@ -7,3 +7,5 @@ python3 tkinterGuGuDan.py
 3. Click '제출' button to check correction
 4. Repeat 1-3.
 
+### Conditions
+1. 
