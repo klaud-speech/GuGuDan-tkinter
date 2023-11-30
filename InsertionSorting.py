@@ -9,8 +9,8 @@ def insertionSorting( arr, descending ):
             comp = arr[j-1] > arr[j];
             #print("comp =",)
             
-            #if arr[j-1] > arr[j]:
-            ##if arr[j-1] < arr[j]:
+            #if arr[j-1] > arr[j]:  높은 순서로
+            #if arr[j-1] < arr[j]:  
             if( (descending==False and comp==True ) or ( descending==True and comp==False  )):
                 arr[j], arr[j-1] = arr[j-1], arr[j]
 
