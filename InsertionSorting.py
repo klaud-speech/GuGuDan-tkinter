@@ -1,4 +1,16 @@
-arr=[40,60,70,50,10,20,30]
+import numpy as np
+
+random = True;
+
+if( random == False ):
+    arr=[40,60,70,50,10,20,30]
+else:
+    arr =[]
+    for i in range(10):
+        num1 = np.random.randint(100);
+        arr.append(num1)
+print("INPUT:  ", arr ) 
+
 
 # double for문,  with i, j variables
 for i in range(1,len(arr)):
@@ -14,7 +26,10 @@ print(">>>> Final Result ", arr )
 
 # while문 and without j variable
 print("\n\n while문 사용")
-arr=[40,60,70,50,10,20,30]
+
+if( random == False ):
+    arr=[40,60,70,50,10,20,30]
+
 for i in range(1,len(arr)):
     while i>0 and arr[i-1] > arr[i]:
         arr[i-1], arr[i] = arr[i], arr[i-1]
