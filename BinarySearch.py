@@ -32,7 +32,7 @@ index = my_index( toSearchValue,  dataSourceAligned)
 if( index >=0 ):
     print("Found", toSearchValue, "value",  "at", index, "index" )
 else:
-    print("NOT found", toSearchValue, "value" )
+    print("NOT Found", toSearchValue, "value" )
 
 
 
