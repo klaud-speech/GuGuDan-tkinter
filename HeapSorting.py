@@ -1,4 +1,5 @@
-arr=[40,70,60,30,10,50,90,80,20]
+import numpy as np
+
 
 def big_heap (a,b, descending=False):   #최대힙
     for j in range(1,b+1):
@@ -14,15 +15,24 @@ def big_heap (a,b, descending=False):   #최대힙
                 a[r],a[c]=a[c],a[r]
             c=r
     
-def heap_s(a, descending=False):
+def heap_s( a, descending=True ):
     for i in range(len(a)-1,0,-1):
         print("i=", i)
         big_heap(a,i, descending )
         a[0],a[i]=a[i],a[0]
     return a
+#########################
 
+random = True;
+if( random == False ):
+    arr=[40,70,60,30,10,50,90,80,20]
+else:
+    arr =[]
+    for i in range(10):
+        num1 = np.random.randint(100);
+        arr.append(num1)
 
-result = heap_s(arr, descending = False)
+result = heap_s(arr, descending = True)
 print(":::::::::: RESULT: ", result)
 
 
